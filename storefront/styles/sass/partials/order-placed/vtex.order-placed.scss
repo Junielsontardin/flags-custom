@@ -1,0 +1,240 @@
+.orderPlacedWrapper {
+    padding-top: 20px;
+}
+
+.noticesList {
+    background: white;
+}
+
+.section--confirmation {
+    margin: 35px 0;
+}
+
+.noticeListItem {
+    padding: 10px 0;
+    border: none;
+    font-size: 13px;
+    color: #292929;
+}
+.confirmationMessage {
+    padding: 0 20px;
+}
+.noticeListItem :global(.vtex-button) {
+    margin-top: 20px;
+    padding: 15px 42px;
+}
+.noticeListItem :global(.vtex-button__label) {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $color-white;
+}
+
+.orderOptionsWrapper :global(.vtex-button__label) {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.package {
+    flex-direction: column;
+}
+
+.bankInvoiceEmbed {
+    width: 100%;
+}
+.orderPaymentItem :global(.vtex-button__label) {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    background: #292929;
+}
+
+.orderSeller {
+    font-weight: 700;
+}
+
+.productList {
+    width: 100%;
+}
+
+.productName {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #666666;
+}
+
+.productPrice {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #104dcf;
+}
+
+.totalListItemValue,
+.totalListItemLabel {
+    color: #666666;
+}
+
+.productImageWrapper {
+    width: 70px;
+    height: auto;
+}
+.productListItem {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.confirmationTitle {
+    color: #292929;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 24px;
+}
+
+.t-heading-4 {
+    text-align: center;
+    color: #c4c4c4;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.barCodeWrapper {
+    display: none;
+}
+
+.printButtonWrapper {
+    margin-left: 0;
+}
+
+.totalListItem--Items, .totalListItem--Discounts, .totalListItem--Shipping {
+    display: none;
+}
+
+.totalListWrapper {
+    justify-content: flex-start;
+}
+
+.totalList {
+    margin-top: 20px;
+}
+
+.totalListItem {
+    justify-content: flex-start;
+    margin-left: 20px;
+}
+
+.totalListItemLabel {
+    color: #292929;
+    font-size: 24px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.totalListItemLabel::after {
+    content: ":";
+    font-weight: 700;
+
+}
+
+.totalListItemValue {
+    font-size: 24px;
+    font-weight: 500;
+    color: #292929;
+    letter-spacing: 0.05em;
+    margin-left: 25px;
+}
+
+.orderNumber {
+    font-size: 24px;
+    text-transform: uppercase;
+    padding-left: 10px;
+    color: #292929
+}
+
+.orderDatetime, 
+.orderSoldBy, 
+.customerInfoListName, 
+.customerInfoListEmail, 
+.customerInfoListDocument, 
+.customerInfoListPhone,
+.paymentGroup,
+.paymentValue,
+.packageShippingEstimate,
+.packageSLA,
+.addressContainer {
+    color: #292929;
+    font-size: 13px;
+    padding: 2px 0
+}
+
+.packageDeliveryTitle {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #292929
+}
+
+.productName {
+    color: #4267B2;
+    font-size: 12px;
+}
+
+.productPrice {
+    display: flex;
+    color: #292929;
+    align-items: center;
+    font-size: 14px;
+}
+
+.orderPaymentItem :global(.vtex-button__label) {
+    font-weight: normal;
+}
+
+.orderOptionsWrapper {
+    display: none;
+}
+
+.orderSeller {
+    color: #292929;
+    font-weight: 500;
+}
+
+.confirmationIconWrapper::after {
+    content: url(assets/imgs/confirmation.png)
+}
+
+.section--bank-invoice {
+    border: none;
+    padding-bottom: 0;
+}
+
+.section--paymentMethods {
+    border: none;
+}
+
+@media (max-width: 640px) {
+    .productQuantity {
+        margin-left: 10px;
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "store.custom#quem-somos": {
+        "blocks": [
+            "flex-layout.row#institucional-breadcrumb",
+            "flex-layout.row#institucional-title",
+            "flex-layout.row#wrapper-quem-somos"
+        ]
+    },
+    "flex-layout.row#wrapper-quem-somos": {
+        "children": [
+            "custom-inst-nav",
+            "flex-layout.col#institucional--quem-somos"
+        ],
+        "props": {
+            "blockClass": "institucional-wrapper",
+            "colSizing": "auto"
+        }
+    },
+    "flex-layout.col#institucional--quem-somos": {
+        "props": {
+            "blockClass": "institucional-main-row"
+        },
+        "children": ["flex-layout.row#institucional--quem-somos"]
+    },
+    "flex-layout.row#institucional--quem-somos": {
+        "children": ["rich-text#quem-somos"]
+    },
+    "rich-text#quem-somos": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "## Sobre  \n Parte de um grande grupo, a Lizz surgiu da vontade de levar 'algo a mais' aos profissionais e clientes mais exigentes. A Lizz é uma marca ousada e inovadora. Seus oito anos de existência lhe proporcionaram grande experiência no mercado de beleza, oferecendo as melhores soluções tanto para os profissionais de beleza como aos usuários domésticos. A marca é pioneira em trazer produtos de qualidade internacional e personalizados para o Brasil. Constantes pesquisas, realizadas por profissionais multidisciplinares, colocam as linhas de produtos LIZZ em sintonia com as mais avançadas tecnologias (Veja mais em ' Tecnologias'). Conheça a seguir nossa essência, no que nos baseamos para crescer, o que somos e o que continuamos sendo, sempre.\n\n\n#### COMO CRESCEMOS\n\n\n##### VISÃO:\n\nSer uma marca de expressão mundial com estilo e inovação em beleza, levando mais satisfação e confiança às pessoas, e, contribuindo também, para um mundo cada vez mais sofisticado e personalizado.\n\n\n##### MISSÃO:\n\nLevar beleza e expressão às pessoas, oferecendo estilo com ousadia.\n\n\n##### VALORES:\n\n• Estilo e Ousadia, a busca pelo diferente, personalizado e exclusivo, sem medo de ousar.\n\n• Inovação e Pioneirismo, a busca constante em oferecer o melhor e o que há de mais novo, com rapidez.\n\n• Humanidade, a valorização e respeito às pessoas de todas as raças, idades, sexo e condição social.\n\n• Qualidade e Excelência, em produtos e em processos.\n\n• Transparência, a comunicação deve ser clara, ética e verdadeira.\n\n• Estética, a busca pela autoexpressão e bem-estar torna as pessoas mais belas e a vida mais feliz.\n\n• Profissionalismo, equipe compromissada, focada e 'antenada' com o que há de mais moderno.",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": "institucional"
+        }
+    }
+}

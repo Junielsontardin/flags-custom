@@ -1,0 +1,62 @@
+.flexCol--container-deals {
+    display: flex;
+    align-items: center;
+}
+
+.flexRow--m3-middle-card {
+    margin-top: 80px;
+}
+
+.flexRow--m3-middle-card .flexRowContent--m3-middle-card .stretchChildrenWidth:first-child {
+    // width: 30.62% !important;
+    width: 30.91%!important
+}
+
+.flexRow--m3-middle-card .flexRowContent--m3-middle-card .stretchChildrenWidth:last-child {
+    width: 70.38% !important;
+}
+
+.flexRowContent--m3-middle-card .stretchChildrenWidth:first-child .flexCol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flexRowContent--m3-middle-card .stretchChildrenWidth:first-child .flexColChild {
+    width: 100%;
+}
+
+
+.flexRowContent--m3-middle-card .stretchChildrenWidth:first-child .flexColChild:first-child {
+    position: relative;
+}
+
+.flexRowContent--m3-middle-card .stretchChildrenWidth:first-child .flexColChild:last-child {
+    position: absolute;
+    height: auto !important;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flexRowContent--m3-middle-card .stretchChildrenWidth:first-child .flexColChild:last-child .flexColChild:first-child {
+    margin-bottom: 100px;
+}
+
+@media (max-width: 639px) {
+    .flexRowContent--m3-middle-card .stretchChildrenWidth:first-child .flexColChild:last-child .flexColChild:first-child {
+        margin-bottom: 110px;
+    }
+    .flexRowContent--m3-middle-card .stretchChildrenWidth:first-child .flexColChild:last-child {
+        margin-top: 20px;
+    }
+    .flexRow--m3-middle-card .flexRowContent--m3-middle-card .stretchChildrenWidth:first-child {
+        width: 100% !important;
+    }
+
+    .flexRow--m3-middle-card .flexRowContent--m3-middle-card .stretchChildrenWidth:last-child {
+        width: 100% !important;
+        margin-top: -3px;
+    }
+}

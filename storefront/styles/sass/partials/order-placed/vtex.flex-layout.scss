@@ -1,0 +1,21 @@
+:global(.vtex-order-placed-2-x-orderWrapper) .flexRowContent .stretchChildrenWidth:last-child {
+    display: none;
+}
+
+.flexRowContent--orderPlacedHeader {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flexRowContent--orderPlacedHeader .stretchChildrenWidth:first-child {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.flexRowContent--orderPlacedHeader .stretchChildrenWidth:last-child {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}

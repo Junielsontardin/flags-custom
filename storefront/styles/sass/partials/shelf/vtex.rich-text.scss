@@ -1,0 +1,24 @@
+/* M3 SHELF TITLE  */
+/* ------------------------------------------------------------------------ */
+.container--m3-shelf-title {
+  margin-top: 65px;
+  margin-bottom: 10px;
+}
+
+.heading--m3-shelf-title {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: $color-gray4;
+  margin: 0;
+}
+
+.paragraph--m3-shelf-title {
+  letter-spacing: 0.1em;
+  font-weight: 500;
+}

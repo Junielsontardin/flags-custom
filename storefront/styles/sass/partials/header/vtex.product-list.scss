@@ -1,0 +1,61 @@
+.quantitySelectorWrapper {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.quantitySelectorDecrease {
+    border-radius: 100px;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    background-color: #C4C4C4 !important;
+}
+
+.quantitySelectorIncrease {
+    border-radius: 100px;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    background-color: #C4C4C4;
+}
+
+/* .quantitySelectorIncrease:hover {
+    background-color: #C4C4C4 !important;
+    border-color: #C4C4C4 !important;
+    border-style: none;
+}
+
+.quantitySelectorDecrease:hover {
+    background-color: #C4C4C4 !important;
+    border-color: #C4C4C4 !important;
+    border-style: none;
+}
+ */
+.inputContainer {
+    width: 43px;
+    height: 34px;
+    border: 1px solid #C4C4C4;
+    border-radius: 6px;
+    padding: 0;
+    margin: 0 8px;
+}
+
+/* .quantitySelectorIncrease::before {
+    content: url(assets/imgs/icon-mais.png);
+}
+.quantitySelectorDecrease::before {
+    content: url(assets/imgs/icon-menos.png);
+    margin-bottom: 8px;
+} */
+
+:global(.vtex-minicart-2-x-minicartWrapperContainer){
+    .openIconContainer {
+      .hover-bg-action-secondary:focus,
+      .hover-bg-action-secondary:hover {
+        background-color: transparent !important;
+      }
+    }
+  }

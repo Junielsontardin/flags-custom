@@ -1,0 +1,19 @@
+.paper--login-mobile {
+    border-radius: unset;
+}
+.headerContainer--login-mobile {
+    border: none
+}
+.closeButton--login-mobile {
+    background-image: url(assets/imgs/close-modal.png);
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    margin-right: 10px;
+}
+.closeIcon--login-mobile {
+    display: none;
+}
+.contentContainer--login-mobile {
+    padding-top: 0;
+}

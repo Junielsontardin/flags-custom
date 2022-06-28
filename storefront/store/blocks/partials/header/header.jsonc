@@ -1,0 +1,127 @@
+{
+    "header": {
+        "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    },
+    "header.full": {
+        "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    },
+    "header-layout.desktop": {
+        "children": [
+            // "flex-layout.row#top-bar",
+            "header-row#4-desktop",
+            "header-row#5-desktop",
+            "telemarketing"
+        ]
+    },
+    "header-row#4-desktop": {
+        "children": [
+            "logo#desktop",
+            "header-spacer",
+            "search-bar",
+            "header-spacer",
+            "flex-layout.row#login-desktop",
+            "minicart.v2"
+        ],
+        "props": {
+            "sticky": true,
+            "blockClass": "main-header"
+        }
+    },
+    "header-row#5-desktop": {
+        "children": ["custom-menu"],
+        "props": {
+            "sticky": false,
+            "blockClass": "main-header-menu"
+        }
+    },
+    "search-bar": {
+        "blocks": ["autocomplete-result-list.v2"],
+        "props": {
+            "openAutocompleteOnFocus": true,
+            "maxWidth": "264px",
+            "placeholder": "Buscar...",
+            "displayMode": "clear-button"
+        }
+    },
+    "autocomplete-result-list.v2": {
+        "blocks": ["product-summary.shelf#m3-shelf-product"],
+        "props":{
+            "maxSuggestedProducts": 2
+        }
+    },
+    "search-bar#mobile": {
+        "blocks": ["autocomplete-result-list.v2"],
+        "props": {
+            "blockClass": "mobile",
+            "openAutocompleteOnFocus": true,
+            "maxWidth": "264px",
+            "placeholder": "Buscar...",
+            "displayMode": "clear-button"
+        }
+    },
+    "logo#desktop": {
+        "props": {
+            "title": "Lizz Logo",
+            "href": "/",
+            "url": "assets/svgs/logo-lizz.svg",
+            "width": "109"
+        }
+    },
+    "header-layout.mobile": {
+        "children": [
+            "header-row#1-mobile",
+            "header-row#2-mobile"
+        ],
+        "props": {
+            "blockClass": "mobile-header"
+        }
+    },
+    "header-row#1-mobile": {
+        "children": ["flex-layout.row#menuHam", "logo#mobile", "minicart.v2"],
+        "props": {
+            "sticky": true,
+            "blockClass": "main-header-mobile"
+        }
+    },
+    "flex-layout.row#menuHam": {
+        "children": ["custom-menu"],
+        "props": {
+        }
+    },
+
+    "header-row#2-mobile": {
+        "children": ["search-bar#mobile"],
+        "props": {
+            "sticky": false,
+            "blockClass": ["mobile-search", "teste"]
+        }
+    },
+    "flex-layout.row#login-desktop": {
+        "children": ["login"],
+        "props": {
+            "preventHorizontalStretch": false,
+            "colSizing": "2",
+            "blockClass": "login-wrapper"
+        }
+    },
+    "logo#mobile": {
+        "props": {
+            "title": "Agência M3 Logo",
+            "href": "/",
+            "url": "assets/imgs/logo-lizz.png",
+            "width": "109"
+        }
+    },
+    "login": {
+        //https://github.com/vtex-apps/login/blob/master/docs/README.md
+        "props": {
+            "optionsTitle": "Escolha uma opção para entrar:",
+            "emailAndPasswordTitle": "Entre com e-mail e senha",
+            "accessCodeTitle": "Receber código de acesso por e-mail",
+            "emailPraceholder": "e-mail",
+            "passwordPlaceholder": "Adicione sua senha",
+            "showPasswordVerificationIntoTooltip": true,
+            "hasGoogleOneTap": false
+        }
+    }
+}

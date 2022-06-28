@@ -1,0 +1,17 @@
+{
+    "store.search#brand": {
+        "props": {
+            "context": {
+                "orderByField": "OrderByTopSaleDESC",
+                "maxItemsPerPage": 9,
+                "skusFilter": "ALL",
+                "simulationBehavior": "default"
+            }
+        },
+
+        "blocks": [
+            "search-result-layout",
+            "link#whatsapp"
+        ]
+    }
+}

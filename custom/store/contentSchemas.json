@@ -1,0 +1,92 @@
+{
+    "definitions": {
+        "CustomMenu": {
+            "type": "object",
+            "properties": {
+                "categorias": {
+                    "minItems": 0,
+                    "type": "array",
+                    "title": "Categorias",
+                    "items": {
+                        "$ref": "app:lojalizz.m3-custom#/definitions/Category"
+                    }
+                }
+            }
+        },
+        "Category": {
+            "type": "object",
+            "properties": {
+                "subCategorias": {
+                    "minItems": 0,
+                    "type": "array",
+                    "title": "SubCategorias",
+                    "items": {
+                        "$ref": "app:lojalizz.m3-custom#/definitions/SubCategory"
+                    }
+                },
+                "nome": {
+                    "title": "Nome",
+                    "type": "string",
+                    "default": ""
+                },
+                "imagem": {
+                    "title": "Imagem da Categoria",
+                    "description": "Pode subir a imagem aqui",
+                    "$ref": "app:vtex.native-types#/definitions/url",
+                    "default": "",
+                    "widget": {
+                        "ui:widget": "image-uploader"
+                    }
+                },
+                "href": {
+                    "title": "Href",
+                    "type": "string",
+                    "default": ""
+                }
+            }
+        },
+        "SubCategory": {
+            "type": "object",
+            "properties": {
+                "nome": {
+                    "title": "Nome",
+                    "type": "string",
+                    "default": ""
+                },
+                "href": {
+                    "title": "Href",
+                    "type": "string",
+                    "default": ""
+                }
+            }
+        },
+        "FlagsCustom": {
+            "type": "object",
+            "properties": {
+                "flags": {
+                    "title": "Conjunto de flags",
+                    "type": "array",
+                    "minItems": 0,
+                    "items": {
+                        "$ref": "app:lojalizz.m3-custom#/definitions/Flags"
+                    }
+                }
+            }
+        },
+        "Flags": {
+            "type": "object",
+            "properties": {
+                "collectionId": {
+                    "title": "ID da coleção",
+                    "type": "string",
+                    "default": ""
+                },
+                "color": {
+                    "title": "Cor da flag em hexadecimal (Ex: #292929)",
+                    "type": "string",
+                    "default": "#292929"
+                }
+            }
+        }
+    }
+}

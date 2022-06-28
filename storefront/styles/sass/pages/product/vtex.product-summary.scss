@@ -1,0 +1,51 @@
+.brandName--m3-shelf {
+  color: #7d7d7d;
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.nameContainer--m3-shelf {
+  margin: 0;
+  margin-bottom: 13px;
+  padding: 7px 0;
+}
+
+.element--m3-shelf-product {
+  position: relative;
+}
+
+.element--m3-shelf-product :global(.vtex-button) {
+  background: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  color: $color-white;
+}
+
+.containerNormal { 
+  max-width: 205px !important;
+  .imageWrapper--m3-shelf-product-image { 
+    .imageContainer--m3-shelf-product-image .image--m3-shelf-product-image{
+      border: 1px solid #E8E8E8;
+      max-width: 200px !important;
+    }
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1044px) {
+  .element--m3-shelf-product :global(.vtex-button__label) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 815px) {
+  .element--m3-shelf-product :global(.vtex-button__label) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

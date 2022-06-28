@@ -1,0 +1,38 @@
+{
+    "store.custom#troca-e-devolucao": {
+        "blocks": [
+            "flex-layout.row#institucional-breadcrumb",
+            "flex-layout.row#institucional-title",
+            "flex-layout.row#wrapper-troca-e-devolucao"
+        ]
+    },
+    "flex-layout.row#wrapper-troca-e-devolucao": {
+        "children": [
+            "custom-inst-nav",
+            "flex-layout.col#institucional-troca"
+        ],
+        "props": {
+            "blockClass": "institucional-wrapper",
+            "colSizing": "auto"
+        }
+    },
+    "flex-layout.col#institucional-troca": {
+        "props": {
+            "blockClass": "institucional-main-row"
+        },
+        "children": ["flex-layout.row#institucional-troca"]
+    },
+    "flex-layout.row#institucional-troca": {
+        "children": ["rich-text#troca-e-devolucao"]
+    },
+    "rich-text#troca-e-devolucao": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "## Troca e Devolução \n##### Política de troca:\n\n\nQuando direcionar o produto para Assistência Técnica Credenciada?\n\nQuando o produto apresentar algum problema de funcionamento\n\nO produto deve estar dentro do prazo de garantia de 12 meses\n\n\n##### Produto dentro da garantia:\n\n\nConsultar umas das Assistências Técnicas Credenciadas no site da LIZZ PROFESSIONAL e clicar na aba Assistência Técnica para localizar a assistência mais próxima da localidade:\n\n\n##### Produto fora da garantia:\n\nO cliente se direcionar para qualquer assistência técnica da sua preferência.\n\n\n##### Falta de Assistência Técnica próxima:\n\nApós pesquisa no site da LIZZ PROFESSIONAL, caso não localize uma assistência técnica próxima para atendimento o SAC deverá ser acionado para orientar qual o procedimento a ser seguido.\n\nEmail: contato@lizz.com.br",
+            "textColor": "",
+            "font": "t-heading-5",
+            "blockClass": "institucional"
+        }
+    }
+}

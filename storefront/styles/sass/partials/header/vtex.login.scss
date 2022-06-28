@@ -1,0 +1,268 @@
+.container :global(.vtex-button__label) {
+        outline: none;
+        border: none;
+        width: 68px;
+        padding-top: 8px !important;
+}
+
+:global(.vtex-login-2-x-container) :global(.vtex-button:focus),
+:global(.vtex-login-2-x-container) :global(.vtex-button:hover) {
+    background-color: transparent !important;
+}
+
+.container :global(.vtex-button) {
+    width: 76px;
+    padding-right: 5px;
+    transition: ease-in 0.22s all;
+}
+
+.container :global(.vtex-button):focus,
+.container :global(.vtex-button):hover {
+    outline: none;
+    background-color: #d5d5d5;
+}
+
+.profile {
+    max-width: 59px !important;
+    color: white;
+}
+.label {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.content {
+    padding: 22px;
+}
+.formTitle {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #7d7d7d;
+    margin-top: 0;
+}
+
+.optionsList {
+    margin: 0;
+}
+
+.buttonSocial {
+    display: none;
+}
+
+.contentForm :global(.vtex-styleguide-9-x-input),
+.contentForm :global(.vtex-styleguide-9-x-input)::-webkit-input-placeholder {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: $color-gray4;
+}
+
+.button :global(.vtex-button) {
+    background: #292929;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $color-white;
+    min-height: 42px;
+    outline: 0 !important;
+}
+
+.formFooter {
+    border: none;
+    .backButton :global(.vtex-button__label) {
+        padding: 0 !important;
+    }
+}
+
+.sendButton :global(.vtex-button) {
+    background: #292929;
+    border-radius: 5px;
+    width: 126px;
+    height: 33px;
+    border: none;
+}
+
+.sendButton :global(.t-small) {
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+    color: $color-white;
+    text-transform: uppercase;
+}
+.sendButton :global(.t-small):focus,
+.sendButton :global(.vtex-button__label):focus {
+    outline: none;
+}
+.arrowBackIcon {
+    display: none;
+}
+.backButton :global(.t-small) {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #292929;
+    display: flex;
+    gap: 3px;
+
+    &:before {
+        content: '';
+        background: url('assets/svgs/arrow-left.svg') no-repeat center center !important;
+        background-size: contain;
+        display: block;
+        height: 16px;
+        width: 16px;
+    }
+}
+
+.forgotPasswordLink {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    color: #292929;
+}
+.dontHaveAccount {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #666666;
+    width: 100%;
+    border-top: 1px solid #e5e5e5;
+    padding-top: 8px;
+}
+.accessCodeOptionBtn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.accessCodeOptionBtn :global(.vtex-button__label)::before {
+    content: "RECEBER CÓDIGO DE ACESSO";
+    position: absolute;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 0.1em;
+    z-index: 1;
+}
+.emailPasswordOptionBtn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.emailPasswordOptionBtn :global(.vtex-button__label)::before {
+    content: "ENTRAR COM E-MAIL";
+    position: absolute;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 0.1em;
+    z-index: 1;
+}
+
+.box {
+    right: -65px !important;
+    width: 288px !important;
+    margin-top: 21px;
+}
+
+.options {
+    min-width: fit-content !important;
+}
+
+@media only screen and (max-width: 1025px) {
+    .box {
+        right: -600px !important;
+    }
+    .container {
+        float: none;
+    }
+
+    .buttonLink :global(.vtex-button) {
+        width: auto;
+    }
+
+    .buttonLink :global(.vtex-button):focus {
+        outline: none;
+        border: none;
+        background: none;
+        width: 100%;
+    }
+
+    .label,
+    .profile {
+        font-family: "Roboto", sans-serif;
+        text-transform: uppercase;
+        display: block;
+        max-width: 100% !important;
+        padding-left: 0;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        color: #292929;
+    }
+
+    .buttonLink :global(.vtex-button__label) {
+        padding-left: 0;
+    }
+
+    .container :global(.vtex-button) {
+        position: relative;
+        width: 100%;
+    }
+    .container :global(.vtex-button__label):focus {
+        outline: none;
+        border: none;
+    }
+    .container :global(.vtex-button__label) {
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        padding: 0;
+        width: 100%;
+    }
+    .content--loginOptions {
+        padding-top: 0;
+    }
+    .content--emailVerification {
+        padding-top: 0;
+        padding-bottom: 10px;
+    }
+    .content--emailAndPassword {
+        padding-top: 0;
+    }
+    .formFooter {
+        margin-top: 0;
+    }
+    .inputContainerPassword {
+        padding-bottom: 0;
+    }
+}

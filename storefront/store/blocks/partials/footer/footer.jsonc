@@ -1,0 +1,276 @@
+{
+    "footer": {
+        "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+    },
+    "footer-layout.desktop": {
+        "children": [
+            "newsletter#m3-newsletter",
+            "flex-layout.row#footer-links",
+            "flex-layout.row#footer-bottom"
+        ]
+    },
+    "flex-layout.row#footer-links": {
+        "children": [
+            //"vtex.menu@2.x:menu#footer-institucional",
+            "flex-layout.col#social",
+            "vtex.menu@2.x:menu#duvidas",
+            "vtex.menu@2.x:menu#footer-fale-conosco"
+        ],
+        "props": {
+            "blockClass": "footer-links"
+        }
+    },
+    "flex-layout.col#social": {
+        "children": [
+            "flex-layout.row#logo-marca-footer",
+            "flex-layout.row#social"
+        ],
+        "props": {
+            "blockClass": "container-social"
+        }
+    },
+    "flex-layout.row#logo-marca-footer": {
+        "children": [
+            "image#logo-marca"
+        ],
+        "props": {
+            "blockClass": "container-logo-footer"
+        }
+    },
+    "image#logo-marca": {
+        "props": {
+            "src": "assets/imgs/logo-lizz-gray.png",
+            "maxWidth": 109,
+            "blockClass": "logo-marca-footer"
+        }
+    },
+    "flex-layout.row#social": {
+        "children": [
+            "image#facebook",
+            "image#instagram",
+            "image#linkedin",
+            "image#youtube"
+        ],
+        "props": {
+            "blockClass": "social"
+        }
+    },
+    "image#facebook": {
+        "props": {
+            "src": "assets/imgs/logo-facebook.png",
+            "link": {
+                "url": "https://www.facebook.com/lizzprofessional",
+                "attributeTitle": "Facebook",
+                "openNewTab": true
+            },
+            "blockClass": "logo-social"
+        }
+    },
+    "image#instagram": {
+        "props": {
+            "src": "assets/imgs/logo-instagram.png",
+            "link": {
+                "url": "https://www.instagram.com/lizzprofessional/",
+                "attributeTitle": "Instagram",
+                "openNewTab": true
+            },
+            "blockClass": "logo-social"
+        }
+    },
+    "image#linkedin": {
+        "props": {
+            "src": "assets/imgs/logo-linkedin.png",
+            "link": {
+                "url": "https://br.linkedin.com/company/lizzprofessional",
+                "attributeTitle": "LinkedIn",
+                "openNewTab": true
+            },
+            "blockClass": "logo-social"
+        }
+    },
+    "image#youtube": {
+        "props": {
+            "src": "assets/imgs/logo-youtube.png",
+            "link": {
+                "url": "https://www.youtube.com/c/lizzprofessional",
+                "attributeTitle": "Youtube",
+                "openNewTab": true
+            },
+            "blockClass": "logo-social"
+        }
+    },
+    "rich-text#site-url-text": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "www.agenciam3.com/",
+            "blockClass": "footer-site-url-text"
+        }
+    },
+    "flex-layout.row#footer-payments": {
+        "props": {
+            "blockClass": "footer-payment-badges"
+        },
+        "children": [
+            "image#master-card",
+            "image#visa",
+            "image#american",
+            "image#elo",
+            "image#Hypercard",
+            "image#Paypal",
+            "image#Boleto",
+            "flex-layout.row#vtex-pci"
+        ]
+    },
+    "flex-layout.row#vtex-pci": {
+        "props": {
+            "blockClass": "footer-vtex-pci-badge"
+        },
+        "children": ["image#vtex-pci"]
+    },
+    "image#master-card": {
+        "props": {
+            "src": "assets/imgs/Master.png",
+            "maxHeight": 20
+        }
+    },
+    "image#visa": {
+        "props": {
+            "src": "assets/imgs/Visa.png",
+            "maxHeight": 20
+        }
+    },
+    "image#american": {
+        "props": {
+            "src": "assets/imgs/Diners.png",
+            "maxHeight": 20
+        }
+    },
+    "image#elo": {
+        "props": {
+            "src": "assets/imgs/Elo.png",
+            "maxHeight": 20
+        }
+    },
+    "image#Hypercard": {
+        "props": {
+            "src": "assets/imgs/Hiper.png",
+            "maxHeight": 20
+        }
+    },
+    "image#Paypal": {
+        "props": {
+            "src": "assets/imgs/Paypal.png",
+            "maxHeight": 20
+        }
+    },
+    "image#Boleto": {
+        "props": {
+            "src": "assets/imgs/Boleto.png",
+            "maxHeight": 20
+        }
+    },
+    "image#vtex-pci": {
+        "props": {
+            "blockClass": "vtex-pci",
+            "src": "assets/imgs/vtex-pci-200.png",
+            "maxHeight": 33
+        }
+    },
+    "flex-layout.row#footer-bottom": {
+        "children": [
+            "rich-text#footer",
+            "flex-layout.row#footer-payments",
+            "flex-layout.row#footer-m3-powered-by"
+        ],
+        "props": {
+            "blockClass": "footer-bottom"
+        }
+    },
+    "rich-text#footer": {
+        "props": {
+            "text": "® 2021, Lizz Professional. Todos os direitos reservados. RAZÃO SOCIAL Mero Comércio de equipamentos LTDA. CNPJ: 17.739.890/0001-50",
+            "blockClass": ["footer-bottom-text", "footer-bottom-store-info"]
+        }
+    },
+    "flex-layout.row#footer-m3-powered-by": {
+        "children": [
+            "rich-text#footer-powered-by-vtex--text",
+            "image#footer-powered-by-vtex--image",
+            "rich-text#footer-powered-by-m3--text",
+            "image#footer-powered-by-m3--image"
+        ],
+        "props": {
+            "blockClass": "footer-m3-powered-by"
+        }
+    },
+    "rich-text#footer-powered-by-vtex--text": {
+        "props": {
+            "text": "Powered by",
+            "blockClass": "footer-bottom-text"
+        }
+    },
+    "image#footer-powered-by-vtex--image": {
+        "props": {
+            "src": "assets/imgs/vtex.png",
+            "maxHeight": 20,
+            "link": {
+                "url": "https://vtex.com",
+                "attributeTitle": "VTEX",
+                "openNewTab": true
+            },
+            "blockClass": "footer-powered-by-vtex--image"
+        }
+    },
+    "rich-text#footer-powered-by-m3--text": {
+        "props": {
+            "text": "Developed by",
+            "blockClass": "footer-bottom-text"
+        }
+    },
+    "image#footer-powered-by-m3--image": {
+        "props": {
+            "src": "assets/imgs/m3-footer.png",
+            "maxHeight": 20,
+            "link": {
+                "url": "https://m3ecommerce.com/",
+                "attributeTitle": "M3",
+                "openNewTab": true
+            }
+        }
+    },
+    "footer-layout.mobile": {
+        "props": {
+            "blockClass": "footer-mobile"
+        },
+        "children": [
+            "newsletter#m3-newsletter",
+            "flex-layout.row#footer-links-mobile",
+            "flex-layout.row#footer-m3-sn-mobile",
+            "flex-layout.row#footer-payments",
+            "rich-text#footer",
+            "flex-layout.row#footer-m3-powered-by"
+        ]
+    },
+    "flex-layout.row#footer-m3-sn-mobile": {
+        "children": ["flex-layout.col#social"],
+        "props": {
+            "blockClass": "social-networks",
+            "rowGap": 4
+        }
+    },
+    "flex-layout.row#footer-links-mobile": {
+        "props": {
+            "blockClass": "footer-links-mobile",
+            "paddingTop": 4,
+            "paddingBottom": 4
+        },
+        "children": ["vtex.menu@2.x:menu#footer-mobile"]
+    },
+    "rich-text#footer-mobile": {
+        "props": {
+            "text": "All stock and product photos are from photos.icons8.com",
+            "blockClass": "footer"
+        }
+    }
+}

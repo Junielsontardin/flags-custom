@@ -1,0 +1,15 @@
+{
+    "custom-inst-nav": {
+        "props": {
+            "links": [
+                { "label": "Sobre", "href": "/sobre" },
+                { "label": "Forma de Pagamento", "href": "/pagamento" },
+                { "label": "Envio e Entrega", "href": "/entrega" },
+                { "label": "Trocas e Devoluções", "href": "/troca-e-devolucao" },
+                { "label": "Políticas e Privacidade", "href": "/privacidade" },
+                { "label": "Contato", "href": "/fale-conosco" }
+            ],
+            "blockClass": "inst-nav-custom"
+        }
+    }
+}

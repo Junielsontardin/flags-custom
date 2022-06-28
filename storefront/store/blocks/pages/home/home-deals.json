@@ -1,0 +1,82 @@
+{
+    "flex-layout.row#deals": {
+        "children": ["slider-layout"],
+        "props": {
+            "blockClass": "deals"
+        }
+    },
+    "slider-layout": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 3,
+                "tablet": 3,
+                "mobile": 1
+            },
+            "infinite": true,
+            "usePagination": true,
+            "showNavigationArrows": "never",
+            "showPaginationDots": "never",
+            "blockClass": "deals-carousel",
+            "centerMode": "disabled"
+        },
+        "children": [
+            "flex-layout.col#deals1",
+            "flex-layout.col#deals2",
+            "flex-layout.col#deals3"
+        ]
+    },
+    "flex-layout.col#deals3": {
+        "children": ["image#deal3", "rich-text#deal3"],
+        "props": {
+            "blockClass": "container-deals"
+        }
+    },
+    "image#deal3": {
+        "props": {
+            "src": "assets/imgs/box.png",
+            "maxHeight": "24px"
+        }
+    },
+    "rich-text#deal3": {
+        "props": {
+            "text": "Entrega para todo **Brasil**",
+            "blockClass": "deals"
+        }
+    },
+    "flex-layout.col#deals1": {
+        "children": ["image#deal1", "rich-text#deal1"],
+        "props": {
+            "blockClass": "container-deals"
+        }
+    },
+    "image#deal1": {
+        "props": {
+            "src": "assets/imgs/CreditCard.png",
+            "maxHeight": "24px"
+        }
+    },
+    "rich-text#deal1": {
+        "props": {
+            "text": "Em até **12** vezes",
+            "blockClass": "deals"
+        }
+    },
+    "flex-layout.col#deals2": {
+        "children": ["image#deal2", "rich-text#deal2"],
+        "props": {
+            "blockClass": "container-deals"
+        }
+    },
+    "image#deal2": {
+        "props": {
+            "src": "assets/imgs/cupom.png",
+            "maxHeight": "24px"
+        }
+    },
+    "rich-text#deal2": {
+        "props": {
+            "text": "Desconto pagamento **à vista**",
+            "blockClass": "deals"
+        }
+    }
+}

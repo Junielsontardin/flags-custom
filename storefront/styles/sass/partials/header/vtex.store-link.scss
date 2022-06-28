@@ -1,0 +1,31 @@
+.link--top-bar {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: $color-white;
+  text-align: center;
+  width: fit-content;
+  margin: 7px 0;
+}
+
+.link--continue-buy {
+  background-color: #4CAF50 !important;
+  border: none;
+  width: 370px;
+  height: 42px;
+}
+
+.link--continue-buy:hover {
+  background-color: #4CAF50 !important;
+}
+
+@media only screen and (max-width: 1025px) {
+  .link--continue-buy {
+    width: auto;
+  }
+}

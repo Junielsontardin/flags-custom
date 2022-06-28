@@ -1,0 +1,24 @@
+.summarySmallDisclaimer{
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  line-height: 14px;
+  color: #7D7D7D;
+  font-size: 0; 
+
+  &::before {
+    content: 'Taxas e frete calculados no Checkout';
+    display: block;
+    font-size: 12px;
+  }
+}
+.summaryItemContainer{
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+}
+.summarySmallContent .summaryItemContainer:last-child{
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #7D7D7D;
+}

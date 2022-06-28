@@ -1,0 +1,120 @@
+
+/* INSTITUCIONAL  */
+.flexRowContent--institucional-breadcrumb-wrapper{
+  display: flex;
+  align-items: center;
+/*   margin-left: 7%; */
+  margin-top: 20px;
+}
+.flexRow--institucional-breadcrumb-wrapper{
+  padding:0 36px;
+}
+.flexRowContent--institucional-titulo-wrapper{
+  margin-top: 5rem;
+}
+.flexRowContent--institucional-wrapper{
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+  justify-content: center;
+  gap: 32px;
+}
+.flexColChild--navegacao-institucional{
+  height: 44px !important;
+  border-right: 1px solid #E5E5E5;
+}
+.flexColChild--institucional-main-row{
+  max-width: 715px;
+}
+
+.flexRow--institucional-main-row {
+  max-width: 1160px;
+  padding: 0 15px;
+  margin: 0 auto;
+  margin-bottom: 180px;
+}
+
+.flexRow--productSpecificationGroup {
+  margin-top: 40px;
+}
+.flexRowContent--productSpecificationGroup {
+  position: relative;
+}
+
+.flexRowContent--productSpecification,
+.flexRowContent--productSpecificationGroupName {
+  padding: 10px 7px;
+  border: 1px solid rgba(34, 36, 38, 0.15);
+}
+
+.flexCol--pedidos-antigos {
+  position: relative;
+}
+
+.flexRow--m3-shelf-badges {
+  position: absolute;
+  top: 16px;
+  left: 18px;
+}
+/* 
+.flexRow--institucional-wrapper {
+  margin-left: 10%
+} */
+
+@media screen and (max-width: 1026px){
+  .flexRow--institucional-breadcrumb-wrapper{
+    padding:0 8px;
+  }
+  .flexRowContent--institucional-wrapper{
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  .flexCol--navegacao-institucional{
+    margin-bottom: 49px;
+    padding-right: 4px;
+    padding-left: 4px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1026px) {
+  .flexCol--navegacao-institucional {
+    padding-right: 3rem;
+    padding-left: 1rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .flexRow--institucional-wrapper {
+    margin-left: 0;
+  }
+  .flexRow--institucional-wrapper .stretchChildrenWidth:last-child {
+    margin-left: 3%;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .flexRow--m3-shelf-badges {
+    left: 5%;
+    top: 5%;
+  }
+}
+
+@media (max-width: 640px) {
+  .flexRow--institucional-wrapper .stretchChildrenWidth:last-child {
+    margin: 0;
+    padding: 0 2%;
+  }
+  .flexRowContent--institucional-titulo-wrapper{
+    margin-top: 0;
+  }
+  .flexCol--navegacao-institucional{
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .flexRow--m3-shelf-badges {
+    left: 8px;
+    top: 25px;
+  }
+}

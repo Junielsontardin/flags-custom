@@ -1,0 +1,44 @@
+.link {
+    font-family: 'Roboto';
+    color: #7D7D7D;
+    padding: 12px 0;
+    padding-left: 16px;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: ease-in 0.22s all;
+}
+
+.link--ativo {
+    color: #fff;
+    font-weight: bold;
+    background-color: #292929;
+}
+
+.navContainer {
+    display: flex;
+    width: 270px !important;
+    flex-direction: column;
+    border-right: 1px solid #e5e5e5;
+    padding-bottom: 20px;
+    height: max-content;
+}
+
+@media screen and (max-width: 1025px) {
+    .navContainer {
+        padding: 0;
+        width: 100% !important;
+        border: none;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .navContainer {
+        margin-top: 20px;
+        margin-bottom: 60px;
+        border: none;
+        padding: 0 16px;
+    }
+}

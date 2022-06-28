@@ -1,0 +1,39 @@
+/**** Minha conta */
+.flexRowContent--account-title{
+      margin-top: 40px;
+      border-bottom: 1px solid #E5E5E5;
+      /* max-width: 90%; */
+      width: 93%;
+      /* transform: translateX(62%); */
+      /* left: -50%; */
+      position: relative;
+      margin: auto;
+
+}
+
+.flexRow--breadcrumbAccount{
+  width: 93%;
+  margin: auto;
+}
+
+.flexRowContent--breadcrumbAccount .stretchChildrenWidth {
+  width: auto !important;
+}
+
+.flexRowContent--breadcrumbAccount .stretchChildrenWidth:first-child {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.flexRowContent--breadcrumbAccount .stretchChildrenWidth:first-child::after {
+  content: url(assets/imgs/arrow-breadcrumb.png);
+  margin-left: 10px
+}
+
+@media (max-width: 640px) {
+  .flexRowContent--breadcrumbAccount {
+    display: flex;
+    padding-left: 1rem;
+  }
+}

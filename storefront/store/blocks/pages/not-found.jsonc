@@ -1,0 +1,99 @@
+{
+    "store.not-found#product": {
+        "blocks": [
+            "flex-layout.row#searchbread",
+            "flex-layout.row#product-not-found",
+            "link#whatsapp"
+        ]
+    },
+    "store.not-found#search": {
+        "blocks": [
+            "flex-layout.row#searchbread",
+            "flex-layout.row#search-not-found",
+            "link#whatsapp"
+        ]
+    },
+    "flex-layout.row#searchbread": {
+        "children": ["breadcrumb.search#custom"],
+        "props": {
+            "preserveLayoutOnMobile": true,
+            "fullWidth": true
+        }
+    },
+
+    "breadcrumb.search#custom": {
+        "props": {
+            "showOnMobile": true,
+            "blockClass": "breadcrumbCustom"
+        }
+    },
+    "flex-layout.row#product-not-found": {
+        "props": {
+            "blockClass": "not-found-row"
+        },
+        "children": ["flex-layout.col#product-not-found"]
+    },
+    "flex-layout.row#search-not-found": {
+        "props": {
+            "blockClass": "search-not-found-row"
+        },
+        "children": ["flex-layout.col#search-not-found"]
+    },
+    "flex-layout.col#product-not-found": {
+        "children": [
+            "rich-text#product-not-found-1",
+            "rich-text#product-not-found-2",
+            "link#back-to-home"
+        ]
+    },
+    "flex-layout.col#search-not-found": {
+        "children": [
+            "rich-text#search-not-found-1",
+            "rich-text#search-not-found-2",
+            "link#back-to-home"
+        ]
+    },
+    "rich-text#product-not-found-1": {
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "**Sua busca não gerou nenhum resultado.**",
+            "font": "t-heading-1",
+            "blockClass": "not-found-heading"
+        }
+    },
+    "rich-text#product-not-found-2": {
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "Verifique os termos buscados e tente novamente.",
+            "font": "t-heading-2",
+            "blockClass": "not-found-sub-heading-first"
+        }
+    },
+    "rich-text#search-not-found-1": {
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "**Página não encontrada**",
+            "font": "t-heading-1",
+            "blockClass": "search-not-found-heading"
+        }
+    },
+    "rich-text#search-not-found-2": {
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "A página que você está tentando acessar está indisponível.",
+            "font": "t-heading-2",
+            "blockClass": "search-not-found-sub-heading"
+        }
+    },
+    "link#back-to-home": {
+        "props": {
+            "href": "/",
+            "blockClass": "backToHome",
+            "label": "VOLTAR"
+        }
+    }
+}

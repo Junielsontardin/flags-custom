@@ -1,0 +1,69 @@
+{
+    "tab-layout#product-details": {
+        "children": ["tab-list#product-details", "tab-content#product-details"],
+        "props": {
+            "blockClass": "home",
+            "defaultActiveTabId": "description"
+        }
+    },
+    "tab-list#product-details": {
+        "children": [
+            "tab-list.item#description"
+            // "tab-list.item#specs",
+        ]
+    },
+    "tab-list.item#description": {
+        "props": {
+            "tabId": "description",
+            "label": "Descrição",
+            "defaultActiveTab": true
+        }
+    },
+    "tab-list.item#specs": {
+        "props": {
+            "tabId": "home2",
+            "label": "Características do produto"
+        }
+    },
+    "tab-content#product-details": {
+        "children": ["tab-content.item#description", "tab-content.item#specs"]
+    },
+    "tab-content.item#description": {
+        "children": ["product-description"],
+        "props": {
+            "tabId": "description"
+        }
+    },
+    "tab-content.item#specs": {
+        "children": [
+            "sandbox.product",
+            "rich-text#specs-message"
+            // "product-specification-group#table"
+        ],
+        "props": {
+            "tabId": "home2"
+        }
+    },
+    "sandbox.product": {
+        "props": {
+            // "width": "200px",
+            // "height": "60px",
+            // "initialContent": "<link rel='stylesheet' href='https://agenciamagma.ecommercetools.com.br/arquivos/kadu/specs.css'><script src='https://unpkg.com/jquery@3.3.1/dist/jquery.min.js'></script><script defer src='https://agenciamagma.ecommercetools.com.br/arquivos/kadu/specs.js'></script>",
+            "initialContent": "<link rel='stylesheet' href='https://agenciam3.vteximg.com.br/arquivos/specs.css'><script src='https://unpkg.com/jquery@3.3.1/dist/jquery.min.js'></script><script defer src='https://agenciam3.vteximg.com.br/arquivos/specs.js'></script>",
+            "allowCookies": true
+        }
+    },
+    "rich-text#specs-message": {
+        "props": {
+            "textAlignment": "LEFT",
+            "textPosition": "LEFT",
+            "text": "(*) Valores Diários com base em uma dieta de 2000 kcal ou 8400 kJ. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas. (**) VD Não estabelecido.",
+            "blockClass": "specs-message"
+        }
+    },
+    "product-description": {
+        "props": {
+            "collapseContent": false
+        }
+    }
+}

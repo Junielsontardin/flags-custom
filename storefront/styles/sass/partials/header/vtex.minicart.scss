@@ -1,0 +1,102 @@
+:global(.vtex-minicart-2-x-minicartWrapperContainer){
+  .openIconContainer {
+  }
+}
+
+:global(.vtex-minicart-2-x-minicartIconContainer) {
+  filter: invert(99%) sepia(1%) saturate(1175%) hue-rotate(256deg) brightness(300%) contrast(100%);
+}
+
+.hover-bg-action-secondary:focus,
+.hover-bg-action-secondary:hover {
+  background-color: transparent !important;
+}
+
+.hover-b--transparent:focus, .hover-b--transparent:hover, .active-b--transparent:active {
+  background-color: transparent !important;
+}
+
+.closeIconButton{
+  background: url(assets/svgs/close-icon.svg) no-repeat center center !important;
+  background-size: contain;
+  margin-left: 5px;
+}
+.closeIconButton .closeIcon{
+  opacity: 0;
+}
+.cartIcon {
+  opacity: 0;
+}
+.minicartTitle {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #292929;
+  padding-left: 25px;
+}
+.drawerContent :global(.vtex-product-list-0-x-productName) {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  color: #7D7D7D;
+}
+
+.drawerContent :global(.vtex-product-list-0-x-price) {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #7D7D7D;
+}
+
+.minicartProductListContainer
+  :global(.vtex-flex-layout-0-x-flexRowContent--product) {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.minicartCheckoutButton :global(.vtex-button){
+  border: none;
+  letter-spacing: 0.05em;
+  font-size: 14px;
+  transition: ease-in .22s all;
+  background-color: #4CAF50;
+}
+.minicartCheckoutButton :global(.vtex-button):hover, .minicartCheckoutButton :global(.vtex-button):active{
+background-color: #4CAF50;
+}
+.unitListPrice{
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  text-decoration-line: line-through;
+  color: #7D7D7D;
+}
+
+:global(.vtex-product-list-0-x-removeButton) {
+  :global(.vtex-product-list-0-x-deleteIcon) {
+    display: none;
+  }
+
+  &::before {
+    content: '';
+    background: url(assets/svgs/deleteicon.svg) no-repeat center center !important;
+    background-size: contain;
+    display: block;
+    height:18px;
+    width: 18px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .minicartTitle {
+    padding-left: 10px;
+  }
+  .closeIconButton {
+    padding-left: 0;
+  }
+}

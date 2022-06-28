@@ -1,0 +1,19 @@
+.flexRowContent--filterMobilePlusSwitcher {
+    .stretchChildrenWidth:first-child {
+        width: 100% !important;
+    }
+
+    .stretchChildrenWidth:last-child {
+        width: auto !important;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .flexRowContent--searchinfomobile .stretchChildrenWidth {
+        width: 50% !important;
+    }
+}

@@ -1,0 +1,42 @@
+.containerFlags {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    z-index: 1;
+    margin-left: 10px;
+    margin-top: 10px
+}
+.flagDiscount,
+.flagCollection,
+.flagNewProduct,
+.flagPreSale {
+    display: flex;
+    width: fit-content;
+}
+
+.flagDiscount {
+    background: red;
+}
+
+.flagNewProduct {
+    background: aqua;
+}
+
+.flagPreSale {
+    background: purple;
+}
+
+.titleFlag {
+    min-width: 54px;
+    width: auto;
+    height: 20px;
+    font-size: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 7px;
+}

@@ -1,0 +1,315 @@
+{
+    "custom-menu": {
+        "props": {
+            "categorias": [
+                {
+                    "nome": "Secadores",
+                    "subCategorias": [
+                        {
+                            "nome": "Profissional",
+                            "href": "/secadores/profissional"
+                        },
+                        {
+                            "nome": "Home Care",
+                            "href": "/secadores/home-care"
+                        }
+                    ],
+                    "imagem": "assets/imgs/imagem-subcategoria.png",
+                    "href": "/secadores"
+                },
+                {
+                    "nome": "Pranchas",
+                    "subCategorias": [
+                        {
+                            "nome": "Profissional",
+                            "href": "/pranchas/profissional"
+                        },
+                        {
+                            "nome": "Home Care",
+                            "href": "/pranchas/home-care"
+                        }
+                    ],
+                    "imagem": "assets/imgs/imagem-subcategoria.png",
+                    "href": "/pranchas"
+                },
+                {
+                    "nome": "Modeladores",
+                    "subCategorias": [
+                        {
+                            "nome": "Profissional",
+                            "href": "/modeladores/profissional"
+                        }
+                    ],
+                    "imagem": "assets/imgs/imagem-subcategoria.png",
+                    "href": "/modeladores"
+                },
+                {
+                    "nome": "Escovas",
+                    "subCategorias": [
+                        {
+                            "nome": "Home Care",
+                            "href": "/escovas/home-care"
+                        }
+                    ],
+                    "imagem": "assets/imgs/imagem-subcategoria.png",
+                    "href": "/escovas"
+                },
+                {
+                    "nome": "Mãos e Pés",
+                    "subCategorias": [
+                        {
+                            "nome": "Profissional",
+                            "href": "/mao-e-pes/profissional"
+                        }
+                    ],
+                    "imagem": "assets/imgs/imagem-subcategoria.png",
+                    "href": "/mao-e-pes"
+                },
+                {
+                    "nome": "Acessórios",
+                    "subCategorias": [
+                        {
+                            "nome": "Depiladores",
+                            "href": "/acessorios/depiladores"
+                        }
+                    ],
+                    "imagem": "assets/imgs/imagem-subcategoria.png",
+                    "href": "/acessorios"
+                },
+                {
+                    "nome": "Mister Lizz",
+                    "subCategorias": [
+                        {
+                            "nome": "Barbeadores",
+                            "href": "/mister-lizz/barbeadores"
+                        },
+                        {
+                            "nome": "Máquina de Corte",
+                            "href": "/mister-lizz/maquina-de-corte"
+                        },
+                        {
+                            "nome": "Máquina de Acabamento",
+                            "href": "/mister-lizz/maquina-de-acabamento"
+                        }
+                    ],
+                    "imagem": "assets/imgs/imagem-subcategoria.png",
+                    "href": "/misterlizz"
+                },
+                {
+                    "nome": "Linha Masculina",
+                    "subCategorias": [
+                        {
+                            "nome": "Barbeadores",
+                            "href": "/linha-masculina/barbeadores"
+                        },
+                        {
+                            "nome": "Máquina de corte",
+                            "href": "/linha-masculina/maquina-de-corte"
+                        },
+                        {
+                            "nome": "Aparadores e cortadores",
+                            "href": "/linha-masculina/aparadores-e-cortadores"
+                        }
+                    ],
+                    "imagem": "assets/imgs/imagem-subcategoria.png",
+                    "href": "/linha-masculina"
+                }
+
+            ]
+        },
+        "children": [
+            "flex-layout.col#drawer-top-links"
+        ]
+    },
+    "flex-layout.col#drawer-top-links": {
+        "children": [
+            // "menu-item#sign-up-&-sign-in",
+            // "login#mobile",
+            // "menu-item#my-account",
+            // "menu-item#my-orders"
+            "user-auth#login-menu-mobile",
+            "user-auth#login-menu-my-account-mobile",
+            "user-auth#login-menu-orders-mobile"
+        ],
+        "props": {
+            "sticky": true,
+            "blockClass": "mobile-links-container"
+        }
+    },
+    //    Login Menu Mobile
+    "user-auth#login-menu-mobile": {
+        "blocks": [
+            "user-auth-content#login-menu-mobile",
+            "user-auth-fallback#login-menu-mobile"
+        ]
+    },
+    "user-auth-content#login-menu-mobile": {
+        "children": ["login#menu-mobile"]
+    },
+    "user-auth-fallback#login-menu-mobile": {
+        "children": ["modal-trigger#login-menu-mobile"]
+    },
+
+    "modal-trigger#login-menu-mobile": {
+        "children": ["rich-text#login-button", "modal-layout#login"],
+        "props": {
+            "blockClass": "login-mobile"
+        }
+    },
+    "rich-text#login-button": {
+        "props": {
+            "text": "Entre ou cadastre-se",
+            "blockClass": "login-menu-mobile"
+        }
+    },
+
+    //
+    //    Login Menu Minha conta Mobile
+    "user-auth#login-menu-my-account-mobile": {
+        "blocks": [
+            "user-auth-content#login-menu-my-account-mobile",
+            "user-auth-fallback#login-menu-my-account-mobile"
+        ]
+    },
+    "user-auth-content#login-menu-my-account-mobile": {
+        "children": ["menu-item#my-account"]
+    },
+    "user-auth-fallback#login-menu-my-account-mobile": {
+        "children": ["modal-trigger#login-menu-my-account-mobile"]
+    },
+
+    "modal-trigger#login-menu-my-account-mobile": {
+        "children": ["rich-text#login-my-account-button", "modal-layout#login"],
+        "props": {
+            "blockClass": "login-mobile"
+        }
+    },
+    "rich-text#login-my-account-button": {
+        "props": {
+            "text": "MINHA CONTA",
+            "blockClass": "login-menu-mobile"
+        }
+    },
+
+    //
+    //    Login Menu Meus pedidos Mobile
+    "user-auth#login-menu-orders-mobile": {
+        "blocks": [
+            "user-auth-content#login-menu-orders-mobile",
+            "user-auth-fallback#login-menu-orders-mobile"
+        ]
+    },
+    "user-auth-content#login-menu-orders-mobile": {
+        "children": ["menu-item#my-orders"]
+    },
+    "user-auth-fallback#login-menu-orders-mobile": {
+        "children": ["modal-trigger#login-menu-orders-mobile"]
+    },
+
+    "modal-trigger#login-menu-orders-mobile": {
+        "children": ["rich-text#login-orders-button", "modal-layout#login"],
+        "props": {
+            "blockClass": "login-mobile"
+        }
+    },
+    "rich-text#login-orders-button": {
+        "props": {
+            "text": "MEUS PEDIDOS",
+            "blockClass": "login-menu-mobile"
+        }
+    },
+
+    "login#mobile": {
+        "props": {
+            // "logInButtonBehavior":"link",
+            "mirrorTooltipToRight": true,
+            "blockClass": "mobile",
+            "emailAndPasswordTitle": "Entre com e-mail e senha",
+            "accessCodeTitle": "Receber código de acesso por e-mail",
+            "emailPraceholder": "e-mail",
+            "passwordPlaceholder": "password",
+            "showPasswordVerificationIntoTooltip": true
+        }
+    },
+
+    "logo#mobile": {
+        "props": {
+            "title": "Kite Têxtil Logotipo",
+            "href": "/",
+            "url": "assets/imgs/logotype.png",
+            "width": "125"
+        }
+    },
+
+    "login#menu-mobile": {
+        //https://github.com/vtex-apps/login/blob/master/docs/README.md
+        "props": {
+            "showIconProfile": false,
+            "labelClasses": ["vtex-login-2-x-label-login--menu-mobile"],
+            "emailAndPasswordTitle": "Entrar com e-mail e senha",
+            "accessCodeTitle": "Receber código de acesso por e-mail",
+            "emailPraceholder": "e-mail",
+            "passwordPlaceholder": "password",
+            "showPasswordVerificationIntoTooltip": true,
+            "hasGoogleOneTap": false
+        }
+    },
+
+    "modal-layout#login": {
+        "children": ["modal-header#login", "modal-content#login"],
+        "props": {
+            "blockClass": "login-mobile"
+        }
+    },
+
+    "modal-header#login": {
+        "props": {
+            "iconCloseSize": 12,
+            "blockClass": "login-mobile"
+        }
+    },
+
+    "modal-content#login": {
+        "children": ["login-content#mobile"],
+        "props": {
+            "blockClass": "login-mobile"
+        }
+    },
+
+    "header-row#2-mobile": {
+        "children": ["search-bar#mobile"],
+        "props": {
+            "sticky": false,
+            "blockClass": ["mobile-search", "teste"]
+        }
+    },
+
+    "search-bar#mobile": {
+        "blocks": ["autocomplete-result-list.v2"],
+        "props": {
+            "blockClass": "mobile",
+            "openAutocompleteOnFocus": true,
+            "maxWidth": "264px",
+            "placeholder": "Buscar...",
+            "displayMode": "clear-button"
+        }
+    },
+    "login-content#mobile": {
+        //https://github.com/vtex-apps/login/blob/master/docs/README.md
+        "props": {
+            "isInitialScreenOptionOnly": true,
+            "mirrorTooltipToRight": true,
+            "blockClass": "mobile",
+            "providerPasswordButtonLabel": "Entrar com e-mail e senha",
+            "accessCodeTitle": "Receber código de acesso por e-mail",
+            "acessCodePlaceholder": "Receber código de acesso por e-mail",
+            "emailPlaceholder": "Ex.: exemplo@mail.com",
+            "passwordPlaceholder": "Adicione sua senha",
+            "showPasswordVerificationIntoTooltip": true,
+            "optionsTitle": "Escolha uma opção para entrar:",
+            "codeConfirmationTitle": "Receber acesso de código",
+            "emailAndPasswordTitle": "Entrar com e-mail e senha",
+            "hasGoogleOneTap": true
+        }
+    }
+}
