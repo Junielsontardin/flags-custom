@@ -20,15 +20,21 @@ export const useNewProduct = () => {
         const skus = productApiData[0]?.items;
 
         itsOnPreSale(skus);
-        isMoreThan30DaysAgo(new Date(dateToCompare));
+        isMoreThan30DaysAgo(dateToCompare);
         
     }, [productApiData]);
     
     const isMoreThan30DaysAgo = (date: any) => {
+      if (!date) {
+        return;
+      }
+      const releaseDate = new Date(date).getTime();
+
       //                   days  hours min  sec  ms
       const thirtyDaysInMs = 30 * 24 * 60 * 60 * 1000;
       const timestampThirtyDaysAgo = new Date().getTime() - thirtyDaysInMs;
-      if (timestampThirtyDaysAgo > date) {
+      
+      if (timestampThirtyDaysAgo > releaseDate) {
         setIsNewProduct(false);
       } else {
         setIsNewProduct(true);
